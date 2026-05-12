@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "fQubJPwl4Q4=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\cbhas\\UrbanGrid\\backend\\src\\UrbanGrid.Application\\UrbanGrid.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\cbhas\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
+    "C:\\Users\\cbhas\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",
+    "C:\\Users\\cbhas\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

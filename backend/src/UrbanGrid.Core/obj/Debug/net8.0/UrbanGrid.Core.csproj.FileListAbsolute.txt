@@ -1,0 +1,11 @@
+C:\Users\cbhas\UrbanGrid\backend\src\UrbanGrid.Core\bin\Debug\net8.0\UrbanGrid.Core.deps.json
+C:\Users\cbhas\UrbanGrid\backend\src\UrbanGrid.Core\bin\Debug\net8.0\UrbanGrid.Core.dll
+C:\Users\cbhas\UrbanGrid\backend\src\UrbanGrid.Core\bin\Debug\net8.0\UrbanGrid.Core.pdb
+C:\Users\cbhas\UrbanGrid\backend\src\UrbanGrid.Core\obj\Debug\net8.0\UrbanGrid.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cbhas\UrbanGrid\backend\src\UrbanGrid.Core\obj\Debug\net8.0\UrbanGrid.Core.AssemblyInfoInputs.cache
+C:\Users\cbhas\UrbanGrid\backend\src\UrbanGrid.Core\obj\Debug\net8.0\UrbanGrid.Core.AssemblyInfo.cs
+C:\Users\cbhas\UrbanGrid\backend\src\UrbanGrid.Core\obj\Debug\net8.0\UrbanGrid.Core.csproj.CoreCompileInputs.cache
+C:\Users\cbhas\UrbanGrid\backend\src\UrbanGrid.Core\obj\Debug\net8.0\UrbanGrid.Core.dll
+C:\Users\cbhas\UrbanGrid\backend\src\UrbanGrid.Core\obj\Debug\net8.0\refint\UrbanGrid.Core.dll
+C:\Users\cbhas\UrbanGrid\backend\src\UrbanGrid.Core\obj\Debug\net8.0\UrbanGrid.Core.pdb
+C:\Users\cbhas\UrbanGrid\backend\src\UrbanGrid.Core\obj\Debug\net8.0\ref\UrbanGrid.Core.dll

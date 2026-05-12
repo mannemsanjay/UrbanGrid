@@ -1,0 +1,56 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: urbangrid-db
+    environment:
+      POSTGRES_USER: urbangrid
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: urbangrid
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - urbangrid-net
+    restart: unless-stopped
+
+  api:
+    build:
+      context: ./backend
+      dockerfile: src/UrbanGrid.API/Dockerfile
+    container_name: urbangrid-api
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ConnectionStrings__DefaultConnection=Host=postgres;Database=urbangrid;Username=urbangrid;Password=${DB_PASSWORD}
+      - JwtSettings__SecretKey=${JWT_SECRET}
+      - JwtSettings__Issuer=UrbanGrid
+      - JwtSettings__Audience=UrbanGridUsers
+    ports:
+      - "5000:5000"
+    depends_on:
+      - postgres
+    networks:
+      - urbangrid-net
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: urbangrid-frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - api
+    networks:
+      - urbangrid-net
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+
+networks:
+  urbangrid-net:
+    driver: bridge

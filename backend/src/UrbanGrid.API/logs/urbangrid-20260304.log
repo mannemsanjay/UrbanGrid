@@ -1,0 +1,54 @@
+2026-03-04 11:01:09.606 +05:30 [WRN] The WebRootPath was not found: C:\Users\cbhas\UrbanGrid\backend\src\UrbanGrid.API\wwwroot. Static files may be unavailable.
+2026-03-04 11:10:25.863 +05:30 [INF] HTTP GET /swagger. responded 404 in 139.3677 ms
+2026-03-04 11:26:54.358 +05:30 [INF] HTTP OPTIONS /api/Auth/register responded 204 in 3.6595 ms
+2026-03-04 11:26:58.956 +05:30 [INF] HTTP POST /api/Auth/register responded 201 in 4590.1922 ms
+2026-03-04 11:38:58.898 +05:30 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 0.1677 ms
+2026-03-04 11:39:01.389 +05:30 [ERR] HTTP POST /api/Auth/login responded 500 in 2483.1798 ms
+System.UnauthorizedAccessException: Invalid email or password
+   at UrbanGrid.Application.Services.AuthService.LoginAsync(LoginRequest request) in C:\Users\cbhas\UrbanGrid\backend\src\UrbanGrid.Application\Services\AuthService.cs:line 26
+   at UrbanGrid.API.Controllers.AuthController.Login(LoginRequest request) in C:\Users\cbhas\UrbanGrid\backend\src\UrbanGrid.API\Controllers\AuthController.cs:line 22
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-03-04 11:39:01.442 +05:30 [ERR] Unhandled exception
+System.UnauthorizedAccessException: Invalid email or password
+   at UrbanGrid.Application.Services.AuthService.LoginAsync(LoginRequest request) in C:\Users\cbhas\UrbanGrid\backend\src\UrbanGrid.Application\Services\AuthService.cs:line 26
+   at UrbanGrid.API.Controllers.AuthController.Login(LoginRequest request) in C:\Users\cbhas\UrbanGrid\backend\src\UrbanGrid.API\Controllers\AuthController.cs:line 22
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at UrbanGrid.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\cbhas\UrbanGrid\backend\src\UrbanGrid.API\Middleware\ExceptionMiddleware.cs:line 22
+2026-03-04 11:39:16.692 +05:30 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 0.0972 ms
+2026-03-04 11:39:17.244 +05:30 [INF] HTTP POST /api/Auth/login responded 200 in 547.4794 ms
+2026-03-04 11:47:05.961 +05:30 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 0.1485 ms
+2026-03-04 11:47:08.772 +05:30 [INF] HTTP POST /api/Auth/login responded 200 in 2800.6654 ms
+2026-03-04 11:49:12.051 +05:30 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 0.1227 ms
+2026-03-04 11:49:12.575 +05:30 [INF] HTTP POST /api/Auth/login responded 200 in 514.4892 ms
+2026-03-04 11:53:46.055 +05:30 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 0.1136 ms
+2026-03-04 11:53:48.547 +05:30 [INF] HTTP POST /api/Auth/login responded 200 in 2487.1998 ms
+2026-03-04 14:50:20.543 +05:30 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 8.9480 ms
+2026-03-04 14:50:24.643 +05:30 [INF] HTTP POST /api/Auth/login responded 200 in 4065.3827 ms
+2026-03-04 14:55:54.749 +05:30 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 1.4643 ms
+2026-03-04 14:55:58.424 +05:30 [INF] HTTP POST /api/Auth/login responded 200 in 3655.0267 ms
+2026-03-04 15:52:03.574 +05:30 [INF] HTTP OPTIONS /api/auth/login responded 204 in 8.6855 ms
+2026-03-04 15:52:07.141 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 3550.6293 ms

@@ -1,0 +1,22 @@
+# Stage 1: Build the .NET app
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS builder
+WORKDIR /app
+
+COPY ["src/UrbanGrid.API/UrbanGrid.API.csproj", "src/UrbanGrid.API/"]
+COPY ["src/UrbanGrid.Application/UrbanGrid.Application.csproj", "src/UrbanGrid.Application/"]
+COPY ["src/UrbanGrid.Core/UrbanGrid.Core.csproj", "src/UrbanGrid.Core/"]
+COPY ["src/UrbanGrid.Infrastructure/UrbanGrid.Infrastructure.csproj", "src/UrbanGrid.Infrastructure/"]
+
+RUN dotnet restore "src/UrbanGrid.API/UrbanGrid.API.csproj"
+
+COPY . .
+RUN dotnet publish "src/UrbanGrid.API/UrbanGrid.API.csproj" \
+    -c Release -o /app/publish
+
+# Stage 2: Run the .NET app
+FROM mcr.microsoft.com/dotnet/aspnet:8.0
+WORKDIR /app
+COPY --from=builder /app/publish .
+EXPOSE 5000
+ENV ASPNETCORE_URLS=http://+:5000
+ENTRYPOINT ["dotnet", "UrbanGrid.API.dll"]

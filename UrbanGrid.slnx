@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/backend/" />
+  <Folder Name="/backend/src/">
+    <Project Path="backend/src/UrbanGrid.API/UrbanGrid.API.csproj" />
+    <Project Path="backend/src/UrbanGrid.Application/UrbanGrid.Application.csproj" />
+    <Project Path="backend/src/UrbanGrid.Core/UrbanGrid.Core.csproj" />
+    <Project Path="backend/src/UrbanGrid.Infrastructure/UrbanGrid.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/backend/tests/">
+    <Project Path="backend/tests/UrbanGrid.Tests/UrbanGrid.Tests.csproj" />
+  </Folder>
+</Solution>

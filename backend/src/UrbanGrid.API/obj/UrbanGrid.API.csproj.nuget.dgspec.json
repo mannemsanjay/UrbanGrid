@@ -1,0 +1,327 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\cbhas\\UrbanGrid\\backend\\src\\UrbanGrid.API\\UrbanGrid.API.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\cbhas\\UrbanGrid\\backend\\src\\UrbanGrid.API\\UrbanGrid.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\cbhas\\UrbanGrid\\backend\\src\\UrbanGrid.API\\UrbanGrid.API.csproj",
+        "projectName": "UrbanGrid.API",
+        "projectPath": "C:\\Users\\cbhas\\UrbanGrid\\backend\\src\\UrbanGrid.API\\UrbanGrid.API.csproj",
+        "packagesPath": "C:\\Users\\cbhas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\cbhas\\UrbanGrid\\backend\\src\\UrbanGrid.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\cbhas\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\cbhas\\UrbanGrid\\backend\\src\\UrbanGrid.Application\\UrbanGrid.Application.csproj": {
+                "projectPath": "C:\\Users\\cbhas\\UrbanGrid\\backend\\src\\UrbanGrid.Application\\UrbanGrid.Application.csproj"
+              },
+              "C:\\Users\\cbhas\\UrbanGrid\\backend\\src\\UrbanGrid.Infrastructure\\UrbanGrid.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\cbhas\\UrbanGrid\\backend\\src\\UrbanGrid.Infrastructure\\UrbanGrid.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "DotNetEnv": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Serilog.Sinks.Console": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "Serilog.Sinks.File": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\cbhas\\UrbanGrid\\backend\\src\\UrbanGrid.Application\\UrbanGrid.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\cbhas\\UrbanGrid\\backend\\src\\UrbanGrid.Application\\UrbanGrid.Application.csproj",
+        "projectName": "UrbanGrid.Application",
+        "projectPath": "C:\\Users\\cbhas\\UrbanGrid\\backend\\src\\UrbanGrid.Application\\UrbanGrid.Application.csproj",
+        "packagesPath": "C:\\Users\\cbhas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\cbhas\\UrbanGrid\\backend\\src\\UrbanGrid.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\cbhas\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\cbhas\\UrbanGrid\\backend\\src\\UrbanGrid.Core\\UrbanGrid.Core.csproj": {
+                "projectPath": "C:\\Users\\cbhas\\UrbanGrid\\backend\\src\\UrbanGrid.Core\\UrbanGrid.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.9.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\cbhas\\UrbanGrid\\backend\\src\\UrbanGrid.Core\\UrbanGrid.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\cbhas\\UrbanGrid\\backend\\src\\UrbanGrid.Core\\UrbanGrid.Core.csproj",
+        "projectName": "UrbanGrid.Core",
+        "projectPath": "C:\\Users\\cbhas\\UrbanGrid\\backend\\src\\UrbanGrid.Core\\UrbanGrid.Core.csproj",
+        "packagesPath": "C:\\Users\\cbhas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\cbhas\\UrbanGrid\\backend\\src\\UrbanGrid.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\cbhas\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\cbhas\\UrbanGrid\\backend\\src\\UrbanGrid.Infrastructure\\UrbanGrid.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\cbhas\\UrbanGrid\\backend\\src\\UrbanGrid.Infrastructure\\UrbanGrid.Infrastructure.csproj",
+        "projectName": "UrbanGrid.Infrastructure",
+        "projectPath": "C:\\Users\\cbhas\\UrbanGrid\\backend\\src\\UrbanGrid.Infrastructure\\UrbanGrid.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\cbhas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\cbhas\\UrbanGrid\\backend\\src\\UrbanGrid.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\cbhas\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\cbhas\\UrbanGrid\\backend\\src\\UrbanGrid.Application\\UrbanGrid.Application.csproj": {
+                "projectPath": "C:\\Users\\cbhas\\UrbanGrid\\backend\\src\\UrbanGrid.Application\\UrbanGrid.Application.csproj"
+              },
+              "C:\\Users\\cbhas\\UrbanGrid\\backend\\src\\UrbanGrid.Core\\UrbanGrid.Core.csproj": {
+                "projectPath": "C:\\Users\\cbhas\\UrbanGrid\\backend\\src\\UrbanGrid.Core\\UrbanGrid.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[7.3.1, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[7.3.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

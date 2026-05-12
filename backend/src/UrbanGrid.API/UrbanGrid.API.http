@@ -1,0 +1,6 @@
+@UrbanGrid.API_HostAddress = http://localhost:5071
+
+GET {{UrbanGrid.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
